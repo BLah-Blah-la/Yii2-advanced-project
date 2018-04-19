@@ -82,7 +82,7 @@ echo Wrapper::widget([
                         <img src="//gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=230" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
-                        <span><?= Yii::t('modules/notifications', 'Welcome') ?></span>
+                        <span><?= Yii::t('modules/notifications', 'Welcome') ?>,</span>
                         <h2><?=Yii::$app->user->identity->username?></h2>
                     </div>
                 </div>
@@ -94,7 +94,8 @@ echo Wrapper::widget([
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
                     <div class="menu_section">
-                        <h3><?= Yii::t('modules/notifications', 'General') ?></h3>
+                        <br/>
+						<br/>
                         <?=
                         \yiister\gentelella\widgets\Menu::widget(
                             [
@@ -102,7 +103,7 @@ echo Wrapper::widget([
                                     ["label" => Yii::t('modules/notifications', 'Home page'), "url" => "/admin", "icon" => "home", 'id' => ''],
                                    /*  ["label" => "Layout", "url" => ["site/layout"], "icon" => "files-o"],
                                     ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"], */
-                                    [
+                                    /* [
                                         "label" => Yii::t('modules/notifications', 'Widgets'),
                                         "icon" => "th",
                                         "url" => "#",
@@ -110,7 +111,7 @@ echo Wrapper::widget([
                                             ["label" => "Panel", "url" => ["panel/Panel"]],
                                             ["label" => "Menu", "url" => ["panel/Menu"]],
                                         ],
-                                    ],
+                                    ], */
                                     [
                                         "label" => Yii::t('modules/notifications', 'Categories'),
                                         "url" => "#",

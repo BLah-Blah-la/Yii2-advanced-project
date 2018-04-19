@@ -15,6 +15,7 @@ use frontend\models\lopez;
 use frontend\models\Notifications;
 use common\models\AccountNotification;
 
+
 /**
  * Site controller
  */
@@ -130,6 +131,11 @@ class SiteController extends Controller
      *
      * @return string
      */
+	public function actionPhoto(){
+		
+		return $this->render('photo');
+		
+	}
     public function actionAbout()
     {
         return $this->render('about');

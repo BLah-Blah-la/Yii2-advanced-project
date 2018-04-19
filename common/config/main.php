@@ -32,7 +32,7 @@ return [
                 'email' => [
                     'class' => 'webzop\notifications\channels\EmailChannel',
                     'message' => [
-                        'from' => 'example@email.com'
+                        'from' => 'kuzmin.sto@yandex.ru'
                     ],
                 ],
             ],

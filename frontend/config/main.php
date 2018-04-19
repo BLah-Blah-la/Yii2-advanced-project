@@ -18,12 +18,17 @@ return [
 		'as frontend' => 'dektrium\user\filters\FrontendFilter',
        ],
     ],
+	'controllerMap' => [
+        'images' => [
+            'class' => 'phpnt\cropper\controllers\ImagesController',
+        ],
+    ],
 	'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
 			'baseUrl' => '',
         ],
- 
+    
  	'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "16b022616cfa11949376aa496e91e820",
+    "content-hash": "afeaf4c8f71e5ba3dc5ca9d648b506dc",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -892,16 +892,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "0ae9b6019e78ec667b2c87d10822af89f707fd1d"
+                "reference": "0cba197282d38956a3cc117f4b0b82b74ffb9749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/0ae9b6019e78ec667b2c87d10822af89f707fd1d",
-                "reference": "0ae9b6019e78ec667b2c87d10822af89f707fd1d",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/0cba197282d38956a3cc117f4b0b82b74ffb9749",
+                "reference": "0cba197282d38956a3cc117f4b0b82b74ffb9749",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5"
             },
             "type": "library",
             "extra": {
@@ -938,7 +941,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2018-04-11T05:15:14+00:00"
+            "time": "2018-04-17T13:18:24+00:00"
         },
         {
             "name": "dvizh/yii2-gallery",
@@ -2067,6 +2070,54 @@
             "time": "2018-02-24T05:28:25+00:00"
         },
         {
+            "name": "kop/yii2-scroll-pager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kop/yii2-scroll-pager.git",
+                "reference": "9b9727ce441fbfc487044535ab6ce0b7694d810b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kop/yii2-scroll-pager/zipball/9b9727ce441fbfc487044535ab6ce0b7694d810b",
+                "reference": "9b9727ce441fbfc487044535ab6ce0b7694d810b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "webcreate/jquery-ias": "^2.2.1",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kop\\y2sp\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Koptiev",
+                    "email": "ivan.koptiev@codex.systems",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Infinite AJAX scrolling for Yii2 ListView widget",
+            "homepage": "http://kop.github.io/yii2-scroll-pager/",
+            "keywords": [
+                "pager",
+                "pagination",
+                "scroll",
+                "scrolling",
+                "yii",
+                "yii2"
+            ],
+            "time": "2016-07-06T19:56:33+00:00"
+        },
+        {
             "name": "loveorigami/yii2-notification-wrapper",
             "version": "dev-master",
             "source": {
@@ -2180,17 +2231,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpdf/mpdf.git",
-                "reference": "11b1e0987d2136c2f313f4f68ab51a3f540bf0ef"
+                "reference": "7fa961e84f22c5452468c2e8cf55e70abf31a7d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/11b1e0987d2136c2f313f4f68ab51a3f540bf0ef",
-                "reference": "11b1e0987d2136c2f313f4f68ab51a3f540bf0ef",
+                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/7fa961e84f22c5452468c2e8cf55e70abf31a7d3",
+                "reference": "7fa961e84f22c5452468c2e8cf55e70abf31a7d3",
                 "shasum": ""
             },
             "require": {
                 "ext-gd": "*",
                 "ext-mbstring": "*",
+                "myclabs/deep-copy": "^1.7",
                 "paragonie/random_compat": "^1.4|^2.0",
                 "php": "^5.6 || ~7.0.0 || ~7.1.0 || ~7.2.0",
                 "psr/log": "^1.0",
@@ -2239,7 +2291,57 @@
                 "php",
                 "utf-8"
             ],
-            "time": "2018-04-05T15:55:46+00:00"
+            "time": "2018-04-18T12:14:00+00:00"
+        },
+        {
+            "name": "myclabs/deep-copy",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/DeepCopy.git",
+                "reference": "9f807201f6e6a8b7ab3582d815511d1807c9c202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/9f807201f6e6a8b7ab3582d815511d1807c9c202",
+                "reference": "9f807201f6e6a8b7ab3582d815511d1807c9c202",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "doctrine/collections": "^1.0",
+                "doctrine/common": "^2.6",
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DeepCopy\\": "src/DeepCopy/"
+                },
+                "files": [
+                    "src/DeepCopy/deep_copy.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Create deep copies (clones) of your objects",
+            "keywords": [
+                "clone",
+                "copy",
+                "duplicate",
+                "object",
+                "object graph"
+            ],
+            "time": "2017-12-18T00:20:24+00:00"
         },
         {
             "name": "navatech/yii2-cropper",
@@ -2284,16 +2386,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.25.0",
+            "version": "1.26.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4"
+                "reference": "e3d9014279133a3cccc01f6a691322a2d5a6a87b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cbcf13da0b531767e39eb86e9687f5deba9857b4",
-                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e3d9014279133a3cccc01f6a691322a2d5a6a87b",
+                "reference": "e3d9014279133a3cccc01f6a691322a2d5a6a87b",
                 "shasum": ""
             },
             "require": {
@@ -2305,14 +2407,9 @@
                 "phpunit/phpunit": "^4.8.35 || ^5.7"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.23-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Carbon\\": "src/Carbon/"
+                    "": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2333,7 +2430,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-03-19T15:50:49+00:00"
+            "time": "2018-04-17T15:35:42+00:00"
         },
         {
             "name": "nex/yii2-datepicker",
@@ -3180,6 +3277,46 @@
             "time": "2016-06-14T06:07:38+00:00"
         },
         {
+            "name": "webcreate/jquery-ias",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webcreate/infinite-ajax-scroll.git",
+                "reference": "97ba99a34e68a3fc186ceb518c9cff51370be24b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webcreate/infinite-ajax-scroll/zipball/97ba99a34e68a3fc186ceb518c9cff51370be24b",
+                "reference": "97ba99a34e68a3fc186ceb518c9cff51370be24b",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fieg",
+                    "email": "jeroen@webcreate.nl",
+                    "homepage": "http://webcreate.nl"
+                }
+            ],
+            "description": "Infinite Ajax Scroll: A jQuery plugin that turns your server-side pagination into an infinite scrolling one using AJAX",
+            "homepage": "https://infiniteajaxscroll.com",
+            "keywords": [
+                "ajax",
+                "ias",
+                "infinite",
+                "jquery",
+                "pagination",
+                "scroll",
+                "scrolling"
+            ],
+            "time": "2018-03-21T20:14:31+00:00"
+        },
+        {
             "name": "webzop/yii2-notifications",
             "version": "dev-master",
             "source": {
@@ -3324,12 +3461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "1411ef38b6f2c2b5d98d0fd13d80a72b818520fb"
+                "reference": "a302394d6d9d2060ede2a4d32aa6d1505dfd30be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/1411ef38b6f2c2b5d98d0fd13d80a72b818520fb",
-                "reference": "1411ef38b6f2c2b5d98d0fd13d80a72b818520fb",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/a302394d6d9d2060ede2a4d32aa6d1505dfd30be",
+                "reference": "a302394d6d9d2060ede2a4d32aa6d1505dfd30be",
                 "shasum": ""
             },
             "require": {
@@ -3416,7 +3553,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2018-04-13T11:53:06+00:00"
+            "time": "2018-04-18T21:01:00+00:00"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -4239,56 +4376,6 @@
             "time": "2018-04-11T19:14:35+00:00"
         },
         {
-            "name": "myclabs/deep-copy",
-            "version": "1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "9f807201f6e6a8b7ab3582d815511d1807c9c202"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/9f807201f6e6a8b7ab3582d815511d1807c9c202",
-                "reference": "9f807201f6e6a8b7ab3582d815511d1807c9c202",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "doctrine/collections": "^1.0",
-                "doctrine/common": "^2.6",
-                "phpunit/phpunit": "^6.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DeepCopy\\": "src/DeepCopy/"
-                },
-                "files": [
-                    "src/DeepCopy/deep_copy.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Create deep copies (clones) of your objects",
-            "keywords": [
-                "clone",
-                "copy",
-                "duplicate",
-                "object",
-                "object graph"
-            ],
-            "time": "2017-12-18T00:20:24+00:00"
-        },
-        {
             "name": "phar-io/manifest",
             "version": "dev-master",
             "source": {
@@ -4580,19 +4667,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "dfd6be44111a7c41c2e884a336cc4f461b3b2401"
+                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/dfd6be44111a7c41c2e884a336cc4f461b3b2401",
-                "reference": "dfd6be44111a7c41c2e884a336cc4f461b3b2401",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
+                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
                 "php": "^5.3|^7.0",
                 "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
-                "sebastian/comparator": "^1.1|^2.0",
+                "sebastian/comparator": "^1.1|^2.0|^3.0",
                 "sebastian/recursion-context": "^1.0|^2.0|^3.0"
             },
             "require-dev": {
@@ -4635,7 +4722,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-02-19T10:16:54+00:00"
+            "time": "2018-04-18T13:57:24+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4643,12 +4730,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "a23ddc74c1c1c896ad2aa740d0c4183203a34d07"
+                "reference": "99d77487b58d70937d469cde6d43f04b07aa57ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/a23ddc74c1c1c896ad2aa740d0c4183203a34d07",
-                "reference": "a23ddc74c1c1c896ad2aa740d0c4183203a34d07",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/99d77487b58d70937d469cde6d43f04b07aa57ef",
+                "reference": "99d77487b58d70937d469cde6d43f04b07aa57ef",
                 "shasum": ""
             },
             "require": {
@@ -4698,7 +4785,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-04-12T05:33:32+00:00"
+            "time": "2018-04-17T12:51:32+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4892,12 +4979,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ea0425bc2918db369a66e7f3b41689b0fdd8dfe6"
+                "reference": "3a9c72931c180ef0473a161ce23b41b1c41f7709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ea0425bc2918db369a66e7f3b41689b0fdd8dfe6",
-                "reference": "ea0425bc2918db369a66e7f3b41689b0fdd8dfe6",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3a9c72931c180ef0473a161ce23b41b1c41f7709",
+                "reference": "3a9c72931c180ef0473a161ce23b41b1c41f7709",
                 "shasum": ""
             },
             "require": {
@@ -4916,7 +5003,7 @@
                 "phpunit/php-text-template": "^1.2.1",
                 "phpunit/php-timer": "^2.0",
                 "phpunit/phpunit-mock-objects": "^6.1.1",
-                "sebastian/comparator": "^2.1",
+                "sebastian/comparator": "^2.1 || ^3.0",
                 "sebastian/diff": "^3.0",
                 "sebastian/environment": "^3.1",
                 "sebastian/exporter": "^3.1",
@@ -4964,7 +5051,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-04-16T04:00:41+00:00"
+            "time": "2018-04-18T13:42:42+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4972,12 +5059,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "70c740bde8fd9ea9ea295be1cd875dd7b267e157"
+                "reference": "5a8650628d94029eafe1260b2edbaf64de852219"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/70c740bde8fd9ea9ea295be1cd875dd7b267e157",
-                "reference": "70c740bde8fd9ea9ea295be1cd875dd7b267e157",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/5a8650628d94029eafe1260b2edbaf64de852219",
+                "reference": "5a8650628d94029eafe1260b2edbaf64de852219",
                 "shasum": ""
             },
             "require": {
@@ -5020,7 +5107,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-04-11T04:50:36+00:00"
+            "time": "2018-04-17T12:53:05+00:00"
         },
         {
             "name": "psr/http-message",
@@ -5123,26 +5210,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "f77ea710f800679202c6d92c3e2f2f56457a19f2"
+                "reference": "ed5fd2281113729f1ebcc64d101ad66028aeb3d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/f77ea710f800679202c6d92c3e2f2f56457a19f2",
-                "reference": "f77ea710f800679202c6d92c3e2f2f56457a19f2",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/ed5fd2281113729f1ebcc64d101ad66028aeb3d5",
+                "reference": "ed5fd2281113729f1ebcc64d101ad66028aeb3d5",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
-                "sebastian/diff": "^2.0 || ^3.0",
+                "php": "^7.1",
+                "sebastian/diff": "^3.0",
                 "sebastian/exporter": "^3.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5 || ^7.0"
+                "phpunit/phpunit": "^7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -5179,7 +5266,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2018-04-06T14:40:13+00:00"
+            "time": "2018-04-18T13:33:00+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -6085,12 +6172,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
+                "reference": "20565957b3c4e389de9ef0d6a337a32321f8e47c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/20565957b3c4e389de9ef0d6a337a32321f8e47c",
+                "reference": "20565957b3c4e389de9ef0d6a337a32321f8e47c",
                 "shasum": ""
             },
             "require": {
@@ -6127,7 +6214,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2018-04-18T14:24:51+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -6135,12 +6222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "15526e95239fcd53316866f9f32cd5daf3a087e5"
+                "reference": "051220255462c080b7c56d09192a930db84c72d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/15526e95239fcd53316866f9f32cd5daf3a087e5",
-                "reference": "15526e95239fcd53316866f9f32cd5daf3a087e5",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/051220255462c080b7c56d09192a930db84c72d9",
+                "reference": "051220255462c080b7c56d09192a930db84c72d9",
                 "shasum": ""
             },
             "require": {
@@ -6174,7 +6261,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2018-04-12T21:42:03+00:00"
+            "time": "2018-04-17T18:34:52+00:00"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -6284,7 +6371,8 @@
         "costa-rico/yii2-images": 20,
         "dvizh/yii2-gallery": 20,
         "dvizh/yii2-order": 20,
-        "dvizh/yii2-review": 20
+        "dvizh/yii2-review": 20,
+        "kop/yii2-scroll-pager": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

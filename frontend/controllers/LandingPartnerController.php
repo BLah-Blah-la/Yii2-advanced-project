@@ -95,7 +95,7 @@ class LandingPartnerController extends Controller
 			
 			Yii::$app->session->setFlash('success', 'Поздравляю, вы оставили заявку');
 			
-            $this->redirect('/');
+            $this->redirect('/landing-partner');
 			
 			return;
         }
@@ -108,7 +108,7 @@ class LandingPartnerController extends Controller
 			
 			Yii::$app->session->setFlash('success', 'Поздравляю, вы оставили заявку');
 			
-            $this->redirect('/');
+            $this->redirect('/landing-partner');
 			
 			return;
 

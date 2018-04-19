@@ -29,7 +29,7 @@
 		"costa-rico/yii2-images": "dev-master",
         "pistol88/yii2-gallery": "*",
         "machour/yii2-notifications": "*",
-		 "timurmelnikov/yii2-loading-overlay": "~1.0.0",
+		"timurmelnikov/yii2-loading-overlay": "~1.0.0",
         "phpnt/yii2-cropper": "*",
         "dvizh/yii2-gallery": "@dev",
         "budyaga/yii2-cropper": "*",
@@ -41,7 +41,8 @@
 		"bower-asset/noty": "^2.3",
 		"bower-asset/jquery-growl": "^1.3",
 		"webzop/yii2-notifications": "*",
-		"2amigos/yii2-chartjs-widget": "~2.0"
+		"2amigos/yii2-chartjs-widget": "~2.0",
+        "kop/yii2-scroll-pager": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

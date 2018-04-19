@@ -43,10 +43,45 @@ class AccountNotification extends Notification
     /**
      * @inheritdoc
      */
+    public function toEmail($channel){
+		
+    if($channel->id == 'email'){
+        if(!in_array($this->key, [self::KEY_NEW_ACCOUNT])){
+            return false;
+        }
+    }
+	
+	
+	switch($this->key){
+        case self::KEY_NEW_ACCOUNT:
+            $subject = 'Welcome to MySite';
+            $template = 'newAccount';
+            break;
+        case self::KEY_RESET_PASSWORD:
+            $subject = 'Password reset for MySite';
+            $template = 'resetPassword';
+            break;
+    }
+
+    $message = $channel->mailer->compose($template, [
+        'user' => $this->user,
+        'notification' => $this,
+    ]);
+    Yii::configure($message, $channel->message);
+
+    $message->setTo($this->user->email);
+    $message->setSubject($subject);
+    $message->send($channel->mailer);
+    }
 
 	public function shouldSend($channel)
     {
     if($channel->id == 'screen'){
+        if(!in_array($this->key, [self::KEY_NEW_ACCOUNT])){
+            return false;
+        }
+    }
+	if($channel->id == 'email'){
         if(!in_array($this->key, [self::KEY_NEW_ACCOUNT])){
             return false;
         }
